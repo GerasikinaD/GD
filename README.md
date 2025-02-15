@@ -66,4 +66,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker
 Команда создает и запускает контейнеры в фоновом режиме используя конфигурацию из файла docker-compose.yml. Но с правами суперпользхователя
 ![image](https://github.com/user-attachments/assets/a3ed6f06-5527-4f2e-ba61-482266d7e30f)
 
+Заходим в Grafana
+![image](https://github.com/user-attachments/assets/feb6b8fc-396b-4393-a900-c597ea726519)
+
 
