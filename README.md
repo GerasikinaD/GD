@@ -19,4 +19,7 @@
 ![image](https://github.com/user-attachments/assets/185edf26-b09b-469a-a2b7-b26c62481700)
 
 Установка тоже завершена данной команды. sudo yum install docker-ce docker-ce-cli containerd.io. Тут мы устанавливали dosker.
-![image](https://github.com/user-attachments/assets/07832d20-d739-4d64-9cf4-a5035fe0f54c)
+![image](https://github.com/user-attachments/assets/8406764c-0c5f-4219-8140-205e8e49512d)
+
+Мы разрешаем автозапуск и запускаем в принципе
+![image](https://github.com/user-attachments/assets/4b9512ac-8a21-481d-905e-7ba7c6813b98)
