@@ -69,4 +69,20 @@ sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker
 Заходим в Grafana
 ![image](https://github.com/user-attachments/assets/feb6b8fc-396b-4393-a900-c597ea726519)
 
+мы заходили в файл dosker.compose.yaml, а после мы сделали команду sudo docker compose stop выполяем остановку
+![image](https://github.com/user-attachments/assets/d885c4d7-715f-424d-b8a8-8c33b21fc1d6)
+
+После мы снова поднимаем sudo docker compose up -d
+![image](https://github.com/user-attachments/assets/b6bf5158-879f-4111-b41a-3bbc397e3aa2)
+
+Используем ещё одну команду sudo docker compose down.
+![image](https://github.com/user-attachments/assets/afe07953-6d6b-4a89-ae2d-89d9f43e7dae)
+
+Ещё раз поднимаем sudo docker compose up -d
+![image](https://github.com/user-attachments/assets/cefa7235-2b2b-4efb-bebc-fa071462987d)
+
+sudo docker compose ps
+![image](https://github.com/user-attachments/assets/c92738b5-b441-4b76-92e5-f71dee2f3cef)
+
+![image](https://github.com/user-attachments/assets/77565952-20bc-4e19-b092-8126a27d323e)
 
