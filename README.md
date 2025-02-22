@@ -86,3 +86,25 @@ sudo docker compose ps
 
 ![image](https://github.com/user-attachments/assets/77565952-20bc-4e19-b092-8126a27d323e)
 
+
+![image](https://github.com/user-attachments/assets/6a6b263b-dadd-42c7-b17d-26e75fee8534)
+
+
+![image](https://github.com/user-attachments/assets/b07840a2-362e-465f-8011-ce69e2f9e9f7)
+
+
+![image](https://github.com/user-attachments/assets/2386c5cb-af99-4958-a4d6-b31c5f330c4d)
+
+
+    sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}
+
+• все файлы и каталоги в указанных директориях будут переданы в собственность текущему пользователю и его группе
+
+
+![image](https://github.com/user-attachments/assets/800950d2-64b0-4a93-94ef-554beecda290)
+
+
+![image](https://github.com/user-attachments/assets/6899a4be-9bed-4878-b318-28400befdc99)
+
+![image](https://github.com/user-attachments/assets/09182d54-9242-4b5b-96a9-eb4b41b2403e)
+
