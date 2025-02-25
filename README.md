@@ -146,7 +146,15 @@ sudo vi docker-compose.yaml
 Ещё раз поднимаем `sudo docker compose up -d` для того что бы звпстить контейнеры.
 ![image](https://github.com/user-attachments/assets/cefa7235-2b2b-4efb-bebc-fa071462987d)
 
-Делаем папку в GetHab
+Делаем папку в GetHab и в ней мы делаем такие же файлы как у Семеновой
+
+![image](https://github.com/user-attachments/assets/e0fdc421-61b5-43fd-99a6-556262f52d02)
+
+![image](https://github.com/user-attachments/assets/073d5404-f739-4ab8-b5ae-8fac8eb259b9)
+
+Переносим их к себе.
+
+
 
 Команда создаёт на компьютере точную копию репозитория, включая все его данные, историю и ветви. Используется для клонирования удалённого репозитория
 `git clone https://githab.com/GerasikinaD/GD.git`
