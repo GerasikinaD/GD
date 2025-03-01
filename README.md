@@ -163,6 +163,12 @@ sudo vi docker-compose.yaml
 ![image](https://github.com/user-attachments/assets/6a6b263b-dadd-42c7-b17d-26e75fee8534)
 
 
+от 1.03.2025г
+
+![image](https://github.com/user-attachments/assets/3b96fe74-3b5f-4ee9-bc16-8d94a53155e7)
+
+
+
 Пользователь с правами администратора открывает файл grafana.yaml для редактирования. 
 `sudo vi grafana.yaml`
 ![image](https://github.com/user-attachments/assets/09182d54-9242-4b5b-96a9-eb4b41b2403e)
