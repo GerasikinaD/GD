@@ -173,3 +173,53 @@ sudo vi docker-compose.yaml
 `sudo vi grafana.yaml`
 ![image](https://github.com/user-attachments/assets/09182d54-9242-4b5b-96a9-eb4b41b2403e)
 
+
+от 1.03.2025г
+![image](https://github.com/user-attachments/assets/d4829fc3-26bb-49f8-854b-7b6703df9cee)
+
+![image](https://github.com/user-attachments/assets/236f2430-14bb-46f7-96c9-eb03fcfef1e2)
+
+![image](https://github.com/user-attachments/assets/6c8463bf-76d4-4e1f-a737-d058982944fe)
+
+![image](https://github.com/user-attachments/assets/4934c936-e64d-45fe-94af-e7cc9ab1fcda)
+
+![image](https://github.com/user-attachments/assets/69856d97-9413-4bf6-ae7b-1362941ebc79)
+
+
+![image](https://github.com/user-attachments/assets/e09a16fd-83ec-46f6-a710-70d56a3184c9)
+
+![image](https://github.com/user-attachments/assets/f63d959a-bcac-4d05-8040-68e73d6c83cc)
+
+![image](https://github.com/user-attachments/assets/ff47f5b9-9a11-46bd-a825-7d9ce3d10d74)
+
+![image](https://github.com/user-attachments/assets/9fa10006-0897-4eb3-8ffd-469a018466ae)
+
+
+ пошагово
+ ![image](https://github.com/user-attachments/assets/b2184a59-99ce-41db-b872-b29fcc884a7a)
+ заходим в выделенное
+ жмем new
+ import
+ вбиваем оюбые цифры и нажимаем load
+![image](https://github.com/user-attachments/assets/ecc2bb72-6ef6-48cc-a2f3-9ca92decb4df)
+
+ вбиваем любые цифры и нажимаем load
+в конце sawe test
+в меню выбираем вкладку Dashboards и создаем Dashboard
+    ждем кнопку +Add visualization, а после "Configure a new data source"
+    выбираем Prometheus
+    Connection
+    http://prometheus:9090
+uthentication
+    Basic authentication
+        User: admin
+        Password: admin
+        Нажимаем на Save & test и должно показывать зелёную галочку
+в меню выбираем вкладку Dashboards и создаем Dashboard
+    ждем кнопку "Import dashboard"
+    Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
+    Select Prometheus ждем кнопку "Import"
+
+
+
+
