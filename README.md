@@ -101,7 +101,7 @@
 ![image](https://github.com/user-attachments/assets/0d3b8ca7-9167-4664-b6d3-e7ef0e4d41aa)
 
 Команда переименовывает файл grafana.yaml в docker-compose.yaml.
-`mv grafana.yaml docker-compose.yaml`
+`mv grafana.yaml docker-compose.yaml` 
 
 ![image](https://github.com/user-attachments/assets/bebe964f-db20-4c25-ab0d-140eaa667780)
 
