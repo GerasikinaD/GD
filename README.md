@@ -146,13 +146,10 @@ sudo vi docker-compose.yaml
 Ещё раз поднимаем `sudo docker compose up -d` для того что бы звпстить контейнеры.
 ![image](https://github.com/user-attachments/assets/cefa7235-2b2b-4efb-bebc-fa071462987d)
 
-Делаем папку в GetHab и в ней мы делаем такие же файлы как у Семеновой
+Создаем папку 1 и переносим туда файлы docker-compose.yaml и prometeus.yaml
+
 
 ![image](https://github.com/user-attachments/assets/e0fdc421-61b5-43fd-99a6-556262f52d02)
-
-![image](https://github.com/user-attachments/assets/073d5404-f739-4ab8-b5ae-8fac8eb259b9)
-
-Переносим их к себе.
 
 ![image](https://github.com/user-attachments/assets/57562b8b-2ee4-4e73-8b9b-66a24fbec7bd)
 
@@ -163,30 +160,129 @@ sudo vi docker-compose.yaml
 ![image](https://github.com/user-attachments/assets/6a6b263b-dadd-42c7-b17d-26e75fee8534)
 
 
-от 1.03.2025г
-
-![image](https://github.com/user-attachments/assets/3b96fe74-3b5f-4ee9-bc16-8d94a53155e7)
-
-
-
 Пользователь с правами администратора открывает файл grafana.yaml для редактирования. 
 `sudo vi grafana.yaml`
 ![image](https://github.com/user-attachments/assets/09182d54-9242-4b5b-96a9-eb4b41b2403e)
 
+Команда `ls` выводит список содержимого домашнего каталога. В выходных данных отображаются такие каталоги, как Desktop, Downloads, Documents, Music Public, Pictures Templates, grafana_stack_for_docker
 
-от 1.03.2025г
+`cd grafana_stack_for_docker/`
+Используется команду cd для смены текущего каталога на grafana_stack_for_docker, который был найден в списке домашнего каталога.
+
+`ls` перечисляет содержимое каталога. На выходе отображаются файлы и каталоги, такие как config, GD, Screenshot_Loki.png, docker-compose.yaml, Readme.md и Screenshot_Prometheus.png
+
+`cd GD Снова меняется каталог, на этот раз на каталог GD, который был в списке grafana_stack_for_docker
+
+`ls` перечисляет содержимое GD каталога, показывая 1 и README.md
+
+`cd 1` меняем каталог на каталог 1.
+
+`ls` на выходе отображаются docker-compose.yaml и prometeus.yaml.
+
+`mv prometeus.yaml prometheus.yaml` переименовывыем prometeus.yaml в prometheus.yaml. Обратите внимание на опечатку в первом случае. Эта команда, скорее всего, приведёт к ошибке «Нет такого файла или каталога» или аналогичной.
+
+`ls` перечисляем каталоги на выходе отображаются docker-compose.yaml и prometheus.yaml
+
+`sudo docker compose down` запускаеся docker compose down с помощью sudo, что останавливает и удаляет контейнеры Docker, определённые в файле docker-compose.yaml в текущем каталоге.
+
 ![image](https://github.com/user-attachments/assets/d4829fc3-26bb-49f8-854b-7b6703df9cee)
+
+`sudo vi prometheus.yaml`
+команда открывает файл prometheus.yaml в текстовом редакторе vi с правами суперпользователя.
+/mnt/common_volume/swarm/grafana/config/prometheus.yaml - исправить targets: на exporter:9100,
 
 ![image](https://github.com/user-attachments/assets/236f2430-14bb-46f7-96c9-eb03fcfef1e2)
 
+`cp prometheus.yaml prometheus.yaml1` Пытаемся скопировать файл prometheus.yaml в новый файл с именем prometheus.yaml1
+Использует `ls` команду для перечисления содержимого config каталога.
+
+Выходные данные команды ls показывают файлы в каталоге:
+loki.yaml,
+prometheus.yaml,
+prometheus.yaml1 (копия, которая была только что создана),
+promtail.yaml,
+web-config.yaml.
+
 ![image](https://github.com/user-attachments/assets/6c8463bf-76d4-4e1f-a737-d058982944fe)
+
+`cd` cd без аргумента, который по умолчанию должен возвращать в домашний каталог пользователя.
+
+`ls` команда ls выводит список содержимого домашнего каталога. В выходных данных отображаются такие каталоги, как Desktop, Downloads, Documents, Music Public, Pictures Templates, grafana_stack_for_docker.
+
+`cd grafana_stack_for_docker/` Используется команда cd для смены текущего каталога на grafana_stack_for_docker, который был найден в списке домашнего каталога
+
+`ls` Приглашение показывает, что пользователь теперь находится в grafana_stack_for_docker каталоге.
+
+ls перечисляет содержимое каталога.
+
+На выходе отображаются файлы и каталоги, такие как config, GD, Screenshot_Loki.png, docker-compose.yaml, Readme.md и Screenshot_Prometheus.png.
+
+`cd GD` снова меняется каталог, на этот раз на каталог GD, который был в списке grafana_stack_for_docker.
+
+`ls` ls перечисляет содержимое GD каталога, показывая 1 и README.md
+
+`cd 1` пытаемся использовать правильную команду «cd», чтобы сменить каталог на «1»
+
+`ls`  перечисляется содержимое каталога 1.
+
+На выходе отображаются «docker-compose.yaml» и «prometheus.yaml».
+
+`sudo cp prometheus.yaml /mnt/common_volume/swarm/grafana/config:` пытаемся скопировать файл prometheus.yaml из текущего каталога (/mnt/common_volume/swarm/grafana/config). «sudo» означает, что потребуются повышенные права.
 
 ![image](https://github.com/user-attachments/assets/4934c936-e64d-45fe-94af-e7cc9ab1fcda)
 
-![image](https://github.com/user-attachments/assets/69856d97-9413-4bf6-ae7b-1362941ebc79)
+`sudo vi ptometheus.yaml` 
 
+sudo - выполняет следующую команду с правами администратора.
+vi — текстовый редактор в Unix-подобных системах (vim в современных системах). Пользователь пытается открыть файл ptometheus.yaml для редактирования. В нём есть опечатка (ptometheus вместо prometheus).
+ptometheus.yaml - Имя файла, которое пользователь пытается изменить (но с ошибкой в написании). Очень вероятно, что пользователь хотел открыть файл с исправленным именем prometheus.yaml.
+
+`sudo docker compose up -d` 
+
+Снова используется sudo для выполнения следующей команды в качестве суперпользователя.
+docker compose up -d:
+docker compose up команда — это часть интерфейса командной строки Docker Compose. Она указывает Docker Compose на необходимость создания (при необходимости) и запуска контейнеров, определённых в файле docker-compose.yaml в текущем каталоге.
+-d - Отдельный режим. Этот флаг указывает Docker Compose на необходимость запуска контейнеров в фоновом режиме.
 
 ![image](https://github.com/user-attachments/assets/e09a16fd-83ec-46f6-a710-70d56a3184c9)
+
+
+переходим на сайт `localhost:3000`
+
+пользователь и пароль: `admin`
+
+код графаны `1816`
+
+код прометеуса: `http://prometheus:9090`
+
+выбираем вкладку Dashboards и создаем Dashboard
+
+ждем кнопку +Add visualization, а после "Configure a new data source"
+
+выбираем Prometheus
+
+Connection
+
+`http://prometheus:9090`
+
+Authentication
+
+Basic authentication
+
+User: `admin`
+
+Password: `admin`
+
+Нажимаем на Save & test и должно показывать зелёную галочку
+
+вкладку Dashboards и создаем Dashboard
+
+ждем кнопку "Import dashboard"
+
+Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
+
+Select Prometheus ждем кнопку "Import"
+
 
 ![image](https://github.com/user-attachments/assets/f63d959a-bcac-4d05-8040-68e73d6c83cc)
 
@@ -194,31 +290,11 @@ sudo vi docker-compose.yaml
 
 ![image](https://github.com/user-attachments/assets/9fa10006-0897-4eb3-8ffd-469a018466ae)
 
-
- пошагово
  ![image](https://github.com/user-attachments/assets/b2184a59-99ce-41db-b872-b29fcc884a7a)
- заходим в выделенное
- жмем new
- import
- вбиваем оюбые цифры и нажимаем load
+ 
 ![image](https://github.com/user-attachments/assets/ecc2bb72-6ef6-48cc-a2f3-9ca92decb4df)
 
- вбиваем любые цифры и нажимаем load
-в конце sawe test
-в меню выбираем вкладку Dashboards и создаем Dashboard
-    ждем кнопку +Add visualization, а после "Configure a new data source"
-    выбираем Prometheus
-    Connection
-    http://prometheus:9090
-uthentication
-    Basic authentication
-        User: admin
-        Password: admin
-        Нажимаем на Save & test и должно показывать зелёную галочку
-в меню выбираем вкладку Dashboards и создаем Dashboard
-    ждем кнопку "Import dashboard"
-    Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
-    Select Prometheus ждем кнопку "Import"
+ 
 
 
 
