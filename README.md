@@ -249,6 +249,13 @@ docker compose up команда — это часть интерфейса ко
 
 переходим на сайт `localhost:3000`
 
+![image](https://github.com/user-attachments/assets/f63d959a-bcac-4d05-8040-68e73d6c83cc)
+
+Открываем сайт
+![image](https://github.com/user-attachments/assets/ff47f5b9-9a11-46bd-a825-7d9ce3d10d74)
+
+Далее мы делаем действия:
+
 пользователь и пароль: `admin`
 
 код графаны `1816`
@@ -265,6 +272,8 @@ Connection
 
 `http://prometheus:9090`
 
+![image](https://github.com/user-attachments/assets/ecc2bb72-6ef6-48cc-a2f3-9ca92decb4df)
+
 Authentication
 
 Basic authentication
@@ -277,22 +286,20 @@ Password: `admin`
 
 вкладку Dashboards и создаем Dashboard
 
+ ![image](https://github.com/user-attachments/assets/b2184a59-99ce-41db-b872-b29fcc884a7a)
+ 
 ждем кнопку "Import dashboard"
 
 Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
 
 Select Prometheus ждем кнопку "Import"
 
-
-![image](https://github.com/user-attachments/assets/f63d959a-bcac-4d05-8040-68e73d6c83cc)
-
-![image](https://github.com/user-attachments/assets/ff47f5b9-9a11-46bd-a825-7d9ce3d10d74)
+Полученный результат:
 
 ![image](https://github.com/user-attachments/assets/9fa10006-0897-4eb3-8ffd-469a018466ae)
 
- ![image](https://github.com/user-attachments/assets/b2184a59-99ce-41db-b872-b29fcc884a7a)
- 
-![image](https://github.com/user-attachments/assets/ecc2bb72-6ef6-48cc-a2f3-9ca92decb4df)
+
+
 
  
 
