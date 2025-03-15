@@ -143,7 +143,7 @@ sudo vi docker-compose.yaml
 
 ![image](https://github.com/user-attachments/assets/afe07953-6d6b-4a89-ae2d-89d9f43e7dae)
 
-Ещё раз поднимаем `sudo docker compose up -d` для того что бы звпстить контейнеры.
+Ещё раз поднимаем `sudo docker compose up -d` для того что бы запустить контейнеры.
 ![image](https://github.com/user-attachments/assets/cefa7235-2b2b-4efb-bebc-fa071462987d)
 
 Создаем папку 1 и переносим туда файлы docker-compose.yaml и prometeus.yaml
@@ -159,9 +159,9 @@ sudo vi docker-compose.yaml
 
 ![image](https://github.com/user-attachments/assets/6a6b263b-dadd-42c7-b17d-26e75fee8534)
 
+`sudo vi grafana.yaml`открываем файл конфигурации Grafana для редактирования с правами суперпользователя
 
-Пользователь с правами администратора открывает файл grafana.yaml для редактирования. 
-`sudo vi grafana.yaml`
+Пользователь с правами администратора открывает файл dosker для редактирования. 
 ![image](https://github.com/user-attachments/assets/09182d54-9242-4b5b-96a9-eb4b41b2403e)
 
 Команда `ls` выводит список содержимого домашнего каталога. В выходных данных отображаются такие каталоги, как Desktop, Downloads, Documents, Music Public, Pictures Templates, grafana_stack_for_docker
@@ -264,7 +264,7 @@ docker compose up команда — это часть интерфейса ко
 
 выбираем вкладку Dashboards и создаем Dashboard
 
-ждем кнопку +Add visualization, а после "Configure a new data source"
+жмем кнопку +Add visualization, а после "Configure a new data source"
 
 выбираем Prometheus
 
